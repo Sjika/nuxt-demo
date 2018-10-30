@@ -43,7 +43,7 @@ npx create-nuxt-app <project name>
   ```js
   plugins: ['@/plugins/*'],
   build: {
-    vendor: ['@/plugins/runx'] //优化打包方案
+    vendor: ['@/plugins/*'] //优化打包方案
   }
   ```
 **重启服务后加载新增组件**

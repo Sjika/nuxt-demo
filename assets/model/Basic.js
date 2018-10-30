@@ -10,7 +10,7 @@ export default {
    * @returns {*} 返回实例捆绑的数据对象，相当于 data 属性返回值
    */
   asyncData(context) {
-    return { from: "server" };
+    return {};
   },
 
   /**
@@ -32,7 +32,7 @@ export default {
   /**
    * 指定当前页面使用的布局样式
    * @param {*} context 
-   * @return {string} /layouts 目录下对应文件名 默认为 default
+   * @return {String} /layouts 目录下对应文件名 默认为 default
    */
   layout(context) {
     return "default";
@@ -55,7 +55,7 @@ export default {
    * Api：https://zh.nuxtjs.org/api/pages-transition
    * @param {*} to 目标页面
    * @param {*} from 跳转页面
-   * @returns {string} 过渡名称
+   * @returns {String} 过渡名称
    */
   transition(to, from) {
     return "";
@@ -64,9 +64,10 @@ export default {
   /**
    * 配置一个校验方法
    * @param {*} context 
+   * @returns {Boolean} 
    */
   validate(context) {
-    return new Promise((resolve) => setTimeout(() => resolve()))
+    // return new Promise((resolve) => setTimeout(() => resolve()))
     return true;
   }
 
