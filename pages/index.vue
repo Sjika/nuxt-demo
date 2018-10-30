@@ -19,9 +19,11 @@ export default {
   components: {
     Logo
   },
+
   asyncData(context) {
     // called every time before loading the component
   },
+
   data() {
     return {
       rate: 0

@@ -1,5 +1,9 @@
 import Basic from "./Basic";
 
+/**
+ * 继承 Basic（nuxt） 对象
+ * 重写 vue 和 nuxt 的属性或函数
+ */
 export default Object.assign(Basic, {
 
   asyncData() {
