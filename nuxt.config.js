@@ -1,5 +1,7 @@
 const pkg = require('./package');
-const open = require('open');
+import hooksActions from './hooks.js';
+
+console.log("h-actions", hooksActions);
 
 module.exports = {
   mode: 'universal',
@@ -48,6 +50,7 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios'
   ],
+
   /**
    * Axios module configuration
    */
@@ -73,21 +76,12 @@ module.exports = {
      * @param {*} config 
      * @param {*} context 
      */
-    extend(config, context) { },
-    vendor: ['axios', 'element-ui', '~plugins/runx', '~plugins/font-awesome']
+    extend(config, context) { }
   },
 
   env: {
-    demo_contract: "123456789",
-    demo_api: {
-      login: "login",
-      logout: "logout"
-    }
+    demo_contract: "123456789"
   },
 
-  // hooks: {
-  //   listen(server, { host, port }) {
-  //     open(`http://${host}:${port}`);
-  //   }
-  // }
+  hooks: hooksActions
 }

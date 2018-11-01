@@ -24,6 +24,10 @@ class Runx {
     console.log(this._store);
   }
 
+  getUserInfo() {
+    return this._axios.post("data").then(r => r);
+  }
+
 }
 
 /**
