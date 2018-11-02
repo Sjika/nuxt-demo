@@ -1,7 +1,5 @@
 const pkg = require('./package');
-import hooksActions from './hooks.js';
-
-console.log("h-actions", hooksActions);
+import hooksActions from './hooks';
 
 module.exports = {
   mode: 'universal',
